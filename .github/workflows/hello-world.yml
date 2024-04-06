@@ -12,5 +12,6 @@ jobs:
       # экшен — выполняет какую-то задачу
       # checkout — клонирует репозиторий
       - uses: actions/checkout@v3
-      # hello-world – произвольная bash-команда
-      - hello-world: make say-hello
+      # run – произвольная bash-команда
+      # ls -la выведет содержимое текущего репозитория
+      - run: make say-hello
